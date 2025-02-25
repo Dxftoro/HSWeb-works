@@ -1,0 +1,1 @@
+scp -P 58528 index.php u68660@kubsu-dev.ru:/home/u68660/www/task3/
