@@ -106,8 +106,8 @@ $langs = $_POST['abilities'];
 
 // Сохранение в базу данных.
 
-$user = 'u68660'; // Заменить на ваш логин uXXXXX
-$pass = '8171849'; // Заменить на пароль
+$user = 'uXXXXX'; // Заменить на ваш логин uXXXXX
+$pass = '*******'; // Заменить на пароль
 $db = new PDO('mysql:host=localhost;dbname=u68660', $user, $pass,
 	[PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]); // Заменить test на имя БД, совпадает с логином uXXXXX
 
