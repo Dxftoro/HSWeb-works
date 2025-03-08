@@ -38,12 +38,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	error_print($errors, 'message', $messages, 'Напишите сообщение.');
 
 	$values = array();
+	$values['abilities'] = array();
+	
+	if (!empty($_COOKIE['abilities_value'])) {$values['abilities'] = unserialize($_COOKIE['abilities_value']);}
 
 	$values['fio'] = empty($_COOKIE['fio_value']) ? '' : $_COOKIE['fio_value'];
 	$values['phone'] = empty($_COOKIE['phone_value']) ? '' : $_COOKIE['phone_value'];
 	$values['email'] = empty($_COOKIE['email_value']) ? '' : $_COOKIE['email_value'];
 	$values['date'] = empty($_COOKIE['date_value']) ? '' : $_COOKIE['date_value'];
-	$values['abilities'] = empty($_COOKIE['abilities_value']) ? '' : unserialize($_COOKIE['abilities_value']);
+	//$values['abilities'] = empty($_COOKIE['abilities_value']) ? array() : unserialize($_COOKIE['abilities_value']);
 	$values['gender'] = empty($_COOKIE['gender_value']) ? '' : $_COOKIE['gender_value'];
 	$values['message'] = empty($_COOKIE['message_value']) ? '' : $_COOKIE['message_value'];
 
