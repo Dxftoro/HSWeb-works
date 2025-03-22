@@ -1,0 +1,44 @@
+body {
+	background-color: #111111;
+	color: white;
+	font-family: Arial;
+}
+
+#table-main {
+	border: 1px solid white;
+    	border-spacing: 1px 1px;
+}
+
+hr {
+    border: none;
+    color: white;
+    background-color: white;
+    border-color: white;
+    height: 2px;
+}
+
+th {
+	padding: 3px;
+}
+
+td {
+	border: 1px solid white;
+	padding: 6px;
+	font-size: 12px;
+}
+.deletion {
+	color: red;
+}
+
+
+tr {
+	background-color: #1f1f1f;
+}
+
+.error {
+	border: 2px solid red;
+}
+
+.correct {
+	color: green;
+}
